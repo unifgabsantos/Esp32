@@ -40,7 +40,7 @@ void setup() {
 void Enviar(){
   HTTPClient http;
   http.addHeader("Content-Type", "text/plain");
-  url = "http://192.168.15.32/Enviar?Temperatura="+(String)temperatura+"&Senha=root";
+  url = "http://192.168.15.32/Enviar?Temperatura="+(String)temperatura+"&Senha=admin";//IP NodeJS
   http.begin(url.c_str());
   httpResponseCode = http.POST("");
   delay(300);
